@@ -1,8 +1,9 @@
 FROM node:alpine
 
 LABEL Name="Semanctic-release" Description="This image is used to start semantic-release with git / changelog and gitlab plugins" Vendor="CCL-Consulting" Version="1.0"
-
-RUN npm install semantic-release @semantic-release/git @semantic-release/changelog @semantic-release/gitlab -D
+ENV PATH="/node_modules/.bin:${PATH}"
 RUN apk add --no-cache bash git openssh
+COPY package.json /
+RUN npm install
 
 ENTRYPOINT ["/bin/bash"]

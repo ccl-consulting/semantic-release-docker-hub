@@ -5,6 +5,5 @@ ENV PATH="/node_modules/.bin:${PATH}"
 RUN apk add --no-cache bash git openssh
 COPY package.json /
 RUN npm install
-COPY .releaserc.yaml /
 
 ENTRYPOINT ["/bin/bash"]

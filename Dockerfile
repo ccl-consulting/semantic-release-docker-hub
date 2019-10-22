@@ -6,4 +6,4 @@ RUN apk add --no-cache bash git openssh
 COPY package.json /
 RUN npm install
 
-ENTRYPOINT ["/bin/bash"]
+ENTRYPOINT ["/bin/bash", "-c"]

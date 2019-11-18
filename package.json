@@ -3,7 +3,7 @@
         "@semantic-release/changelog": "github:semantic-release/changelog",
         "@semantic-release/git": "github:semantic-release/git",
         "@semantic-release/gitlab": "github:semantic-release/gitlab",
-        "conventional-changelog": "^3.1.12",
-        "semantic-release": "^15.13.27"
+        "conventional-changelog": "3.1.15",
+        "semantic-release": "15.13.31"
     }
 }

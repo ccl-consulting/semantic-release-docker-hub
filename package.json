@@ -4,6 +4,6 @@
         "@semantic-release/git": "github:semantic-release/git",
         "@semantic-release/gitlab": "github:semantic-release/gitlab",
         "conventional-changelog": "3.1.15",
-        "semantic-release": "15.13.31"
+        "semantic-release": "16.0.1"
     }
 }
